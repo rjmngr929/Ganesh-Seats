@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:padding="6dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tabTitle"
+        android:text="VIP"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@android:color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/black"
+        app:cardCornerRadius="@dimen/_50sdp"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_gravity="center">
+        <TextView
+            android:id="@+id/tabSeats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:padding="@dimen/_4sdp"
+            android:textSize="@dimen/_10ssp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"/>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

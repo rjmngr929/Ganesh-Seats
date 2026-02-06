@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/alert_message_box"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border"
+        android:backgroundTint="@color/white"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/_10sdp">
+
+        <TextView
+            android:id="@+id/alert_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Product Detail"
+            android:textSize="@dimen/_18ssp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+
+<!--        Manufactured add/ edit ke liye api level krna hai-->
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/seatNameTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="product name"
+            app:hintTextColor="@color/darkMineShaft"
+            app:boxStrokeColor="@color/darkMineShaft"
+            android:layout_marginVertical="@dimen/_6sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/seatName_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkMineShaft"
+                android:maxLines="1"
+                android:maxLength="100"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/select_availability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_8sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            app:boxStrokeColor="@color/darkMineShaft"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            app:boxBackgroundColor="@android:color/white"
+            app:endIconDrawable="@drawable/ic_down_arrow"
+            app:endIconTint="@color/black"
+            app:endIconCheckable="false"
+            app:hintTextColor="@color/darkMineShaft">
+
+            <AutoCompleteTextView
+                android:id="@+id/availabilityFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dropDownSelector="@drawable/rounded_border"
+                android:ellipsize="end"
+                android:inputType="none"
+                android:maxLines="1"
+                android:hint="@string/selectproductavailable"
+                android:textColorHint="@color/darkMineShaft"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:text="Select availability"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkMineShaft"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/select_product_quality"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_8sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            app:boxStrokeColor="@color/darkMineShaft"
+
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            app:boxBackgroundColor="@android:color/white"
+
+            app:boxBackgroundMode="outline"
+
+            app:endIconDrawable="@drawable/ic_down_arrow"
+            app:endIconTint="@color/black"
+            app:endIconCheckable="false"
+            app:hintTextColor="@color/darkMineShaft">
+
+            <AutoCompleteTextView
+                android:id="@+id/product_qualityFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dropDownSelector="@drawable/rounded_border"
+                android:ellipsize="end"
+                android:inputType="none"
+                android:maxLines="1"
+                android:hint="@string/selectproduct_category"
+                android:textColorHint="@color/darkMineShaft"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:text="Select category"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkMineShaft"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/select_manufacture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_8sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            app:boxStrokeColor="@color/darkMineShaft"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            app:boxBackgroundColor="@android:color/white"
+            app:endIconDrawable="@drawable/ic_down_arrow"
+            app:endIconTint="@color/black"
+            app:endIconCheckable="false"
+            app:hintTextColor="@color/darkMineShaft">
+
+            <AutoCompleteTextView
+                android:id="@+id/product_manufactureFilter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dropDownSelector="@drawable/rounded_border"
+                android:ellipsize="end"
+                android:inputType="none"
+                android:maxLines="1"
+                android:hint="@string/selectmanufacture_quality"
+                android:textColorHint="@color/darkMineShaft"
+                android:padding="@dimen/_12sdp"
+                android:singleLine="true"
+                android:text="Select manufacture"
+                android:textAlignment="textStart"
+                android:textColor="@color/darkMineShaft"
+                tools:ignore="LabelFor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/manufactureQuantityTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="manufactured quantity"
+            app:hintTextColor="@color/darkMineShaft"
+            app:boxStrokeColor="@color/darkMineShaft"
+            android:layout_marginVertical="@dimen/_6sdp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/manufactureQuantity_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/darkMineShaft"
+                android:inputType="number"
+                android:maxLines="1"
+                android:maxLength="10"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <RelativeLayout
+            android:id="@+id/imgUpload_layout_product"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_120sdp"
+            android:gravity="center"
+            android:background="@drawable/rounded_border"
+            android:backgroundTint="@color/light_white"
+            android:layout_marginVertical="@dimen/_6sdp">
+
+            <LinearLayout
+                android:id="@+id/img_default_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:src="@drawable/img_upload"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload Image"
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@color/light_gray"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/previewImg_product"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="preview_image"
+                android:scaleType="fitCenter"/>
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_8sdp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/product_add_cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                app:cornerRadius="@dimen/_10sdp"
+                android:backgroundTint="@color/darkMineShaft"
+                android:text="Cancel"
+                android:textSize="@dimen/_14ssp"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:strokeColor="@color/white"
+                android:paddingHorizontal="@dimen/_25sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/product_add_save_btn"/>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/product_add_save_btn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:backgroundTint="@color/darkMineShaft"
+                app:cornerRadius="@dimen/_10sdp"
+                android:text="Save"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/white"
+                android:paddingHorizontal="@dimen/_35sdp"
+                android:layout_marginStart="@dimen/_4sdp"
+                android:layout_alignParentEnd="true"
+                app:layout_constraintStart_toEndOf="@+id/product_add_cancel_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</ScrollView>

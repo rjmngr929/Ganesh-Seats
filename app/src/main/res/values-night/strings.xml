@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="okay">Okay</string>
+    <string name="allow">Allow</string>
+    <string name="emptyTextField">Field Required</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="database_name">Ganesh_Seats</string>
+    <string name="searchbrand_hint">Search Brand</string>
+    <string name="brandName">Brand Name</string>
+    <string name="selectproductavailable">Select Product Availability</string>
+    <string name="selectproduct_quality">Select Product Quality</string>
+    <string name="searchmodel_hint">Search Car Model</string>
+    <string name="selectmanufacture_quality">Select Manufacture</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="permissions_required">Please give permission.</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="select_option">Select</string>
+    <string name="searchseats_hint">Search seats</string>
+    <string name="selectproduct_category">Select product category</string>
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/car_model_navigation"
+    app:startDestination="@id/carModelsFragment">
+
+    <fragment
+        android:id="@+id/carModelsFragment"
+        android:name="com.my.ganeshseats.ui.fragments.CarModelsFragment"
+        android:label="fragment_car_models"
+        tools:layout="@layout/fragment_car_models" >
+        <action
+            android:id="@+id/action_carModelsFragment_to_seatCoversFragment"
+            app:destination="@id/seatCoversFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/seatCoversFragment"
+        android:name="com.my.ganeshseats.ui.fragments.SeatCoversFragment"
+        android:label="fragment_seat_covers"
+        tools:layout="@layout/fragment_seat_covers" >
+        <action
+            android:id="@+id/action_seatCoversFragment_to_carModelsFragment"
+            app:destination="@id/carModelsFragment" />
+    </fragment>
+</navigation>

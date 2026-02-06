@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:theme="@style/Theme.GaneshSeats.AppBarOverlay"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cardElevation="@dimen/_2sdp">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            app:titleTextColor="@color/black"
+            app:buttonGravity="center_vertical"
+            app:subtitleTextColor="@color/black"
+            app:navigationIconTint="@color/black"
+            android:theme="@style/Theme.GaneshSeats.PopupOverlay"
+            android:popupTheme="@style/Theme.GaneshSeats.PopupOverlay"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+</androidx.cardview.widget.CardView>

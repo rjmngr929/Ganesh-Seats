@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.GaneshSeats" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+        <item name="colorPrimary">@color/white</item> <!-- Component Background Color  -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <item name="colorAccent">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item> <!-- Button Text Color  -->
+
+        <item name="colorOnSurface">@color/darkMineShaft</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!--        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>-->
+
+        <item name="colorControlNormal">@color/black</item>
+
+        <item name="textInputStyle">@style/ThemeOverlay.CustomTextField</item>
+
+
+
+    </style>
+
+    <style name="ThemeOverlay.CustomTextField" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/black</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="cursorColor">@color/black</item>
+    </style>
+
+
+    <style name="Theme.GaneshSeats" parent="Base.Theme.GaneshSeats" />
+
+
+
+    <style name="Splashscreen" parent="Theme.GaneshSeats">
+        <!--        <item name="android:statusBarColor">@color/black</item>-->
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <!--    Transparent Alert Background-->
+    <style name="MyDialogStyle_transparent" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMinor">75%</item>
+    </style>
+    <!--    Transparent Alert Background-->
+
+    <style name="Theme.GaneshSeats.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="Theme.GaneshSeats.PopupOverlay" parent="Theme.AppCompat.Light.NoActionBar">
+        //toolbar back arrow color
+        <item name="android:textColorSecondary">@color/black</item>
+
+        //toolbar title color
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="CustomTabText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/_10ssp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+<!--        <item name="android:textStyle">bold</item> &lt;!&ndash; optional &ndash;&gt;-->
+    </style>
+
+
+    <style name="Widget.App.CheckBox" parent="Widget.Material3.CompoundButton.CheckBox">
+        <item name="buttonTint">@color/button_tint</item>
+        <item name="buttonIconTint">@color/button_icon_tint</item>
+    </style>
+
+</resources>
